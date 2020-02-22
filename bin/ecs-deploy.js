@@ -65,8 +65,15 @@ invoke(function() {
 function nextTask(task, containerName, image, tag) {
   return {
     family: task.family,
-    volumes: task.volumes,
     taskRoleArn: task.taskRoleArn,
+    executionRoleArn: task.executionRoleArn,
+    networkMode: task.networkMode,
+    volumes: task.volumes,
+    placementConstraints: task.placementConstraints,
+    requiresCompatibilities: task.requiresCompatibilities,
+    cpu: task.cpu,
+    memory: task.memory,
+    // executionRole
     containerDefinitions: task.containerDefinitions.map(function(container) {
       if (container.name === containerName) {
         return nextContainer(container, image, tag);
