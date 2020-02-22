@@ -1,16 +1,16 @@
 {
-  "name": "ecs-deploy",
+  "name": "fargate-deploy",
   "version": "2.1.1",
   "description": "Deploy container images to Amazon EC2 Container Service (ECS)",
   "bin": {
-    "ecs-deploy": "./bin/ecs-deploy.js"
+    "fargate-deploy": "./bin/fargate-deploy.js"
   },
   "scripts": {
     "test": "eslint ."
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gavacho/ecs-deploy.git"
+    "url": "git+https://github.com/wbw20/fargate-deploy.git"
   },
   "keywords": [
     "amazon",
@@ -23,9 +23,9 @@
   "author": "@gavacho",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gavacho/ecs-deploy/issues"
+    "url": "https://github.com/wbw20/fargate-deploy/issues"
   },
-  "homepage": "https://github.com/gavacho/ecs-deploy#readme",
+  "homepage": "https://github.com/wbw20/fargate-deploy#readme",
   "engines": {
     "node": ">=0.12"
   },

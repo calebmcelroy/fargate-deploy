@@ -1,4 +1,4 @@
-#ecs-deploy
+#fargate-deploy
 Deploy container images to Amazon EC2 Container Service (ECS).
 
 ## Configuration
@@ -21,8 +21,8 @@ Unless indicated, the following environment variables are required:
 ## Example Usage
 
 ```bash
-npm install --global ecs-deploy
-REGION=us-west-1 CLUSTER=my-cluster SERVICE=my-service CONTAINER=my-container IMAGE=my-user/my-repo IMAGE_TAG=latest WAIT=true ecs-deploy
+npm install --global fargate-deploy
+REGION=us-west-1 CLUSTER=my-cluster SERVICE=my-service CONTAINER=my-container IMAGE=my-user/my-repo IMAGE_TAG=latest WAIT=true fargate-deploy
 ```
 
 ## Alternate Usage
@@ -30,7 +30,7 @@ REGION=us-west-1 CLUSTER=my-cluster SERVICE=my-service CONTAINER=my-container IM
 Install from the command line:
 
 ```bash
-npm install --save-dev ecs-deploy
+npm install --save-dev fargate-deploy
 ```
 
 Add a `deploy` script to your `package.json`:
@@ -38,7 +38,7 @@ Add a `deploy` script to your `package.json`:
 ```json
 {
   "scripts": {
-    "deploy": "REGION=us-west-1 CLUSTER=my-cluster SERVICE=my-service CONTAINER=my-container IMAGE=my-user/my-repo ecs-deploy"
+    "deploy": "REGION=us-west-1 CLUSTER=my-cluster SERVICE=my-service CONTAINER=my-container IMAGE=my-user/my-repo fargate-deploy"
   }
 }
 ```
