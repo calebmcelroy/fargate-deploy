@@ -30,9 +30,11 @@
     "node": ">=0.12"
   },
   "dependencies": {
-    "aws-sdk": "^2.0.0",
+    "aws-sdk": "^2.624.0",
+    "jmespath": "^0.15.0",
     "lodash": "^4.0.0",
-    "require-environment-variables": "^1.0.0"
+    "require-environment-variables": "^1.0.0",
+    "sax": "^1.2.4"
   },
   "devDependencies": {
     "eslint": "^4.0.0"
