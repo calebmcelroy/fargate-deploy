@@ -1,4 +1,4 @@
-#fargate-deploy
+# fargate-deploy
 Deploy container images to Amazon EC2 Container Service (ECS).
 
 ## Configuration
